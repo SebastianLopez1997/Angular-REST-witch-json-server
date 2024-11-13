@@ -1,0 +1,39 @@
+<section>
+  <fieldset>
+    <legend>Change data user</legend>
+
+    <form [formGroup]="formulario" (ngSubmit)="post()">
+      <label for="id">id </label>
+      <input type="text" name="id" id="id" formControlName="id" />
+      <br />
+      <label for="firstname">Firs Name</label>
+      <input
+        type="text"
+        name="firstname"
+        id="firstname"
+        formControlName="firstname"
+      />
+      <br />
+      <label for="lastname">Last Name</label>
+      <input
+        type="text"
+        name="lastname"
+        id="lastname"
+        formControlName="lastname"
+      />
+      <br />
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" formControlName="email" />
+      <br />
+      <label for="country">Country</label>
+      <input
+        type="text"
+        name="country"
+        id="country"
+        formControlName="country"
+      />
+      <br />
+      <button type="submit">Update</button>
+    </form>
+  </fieldset>
+</section>

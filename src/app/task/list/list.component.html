@@ -1,0 +1,36 @@
+<p>list works!</p>
+<section>
+  <fieldset>
+    <legend>Tablita</legend>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+
+          <th>nombre</th>
+
+          <th>apellido</th>
+
+          <th>Email</th>
+
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of listUser; track $index) {
+        <tr>
+          <td>{{ item.id }}</td>
+          <td>{{ item.firstname }}</td>
+          <td>{{ item.lastname }}</td>
+          <td>{{ item.email }}</td>
+          <td>{{ item.country }}</td>
+
+          <button  [routerLink]="['update', item.id]">Update</button>
+
+          <button (click)="deleteUser(item.id)">Eliminar</button>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </fieldset>
+</section>

@@ -1,0 +1,24 @@
+<h2>Add new Student</h2>
+
+<fieldset>
+    <legend>ADD STUDENT</legend>
+    
+    <form [formGroup]="formulario" (ngSubmit)="addStudent()">
+    <label for="id">ID</label>
+    <input type="text" name="id" id="id" formControlName="id">
+    <br>
+    <label for="firstname">firstname</label>
+    <input type="text" name="firstname" id="firstname" formControlName="firstname">
+    <br>
+    <label for="lastname">lastname</label>
+    <input type="text" name="lastname" id="lastname" formControlName="lastname">
+    <br>
+    <label for="email">email</label>
+    <input type="text" name="email" id="email" formControlName="email">
+    <br>
+    <label for="country"country>country</label>
+    <input type="text" name="country" id="country" formControlName="country">
+    
+    <button type="submit">ADD</button>
+    </form>
+</fieldset>
